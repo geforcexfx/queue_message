@@ -1,4 +1,4 @@
-import queue
+import Queue
 import threading
 import time
 import random
@@ -8,7 +8,7 @@ f= open("newfile.txt","r")
 fl= f.readlines()
 #open a file in write mode
 ws = open("remote_file.txt","w")
-q = queue.Queue()
+q = Queue.Queue()
 
 def sender():
     n = 0
